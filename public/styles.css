@@ -65,7 +65,7 @@ footer p {
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
   padding: 10px;
-  width: 240px;
+  width: 300px;
   margin: 16px;
   float: left;
 }
@@ -124,4 +124,48 @@ form.create-note button {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
+}
+
+.link {
+  display: inline-block;
+  vertical-align: top;
+  width: 100px;
+  height: 34px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.1em;
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 10px;
+  position: relative;
+}
+
+.wipe, .slide, .opacity {
+  border: 2px solid #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.opacity {
+  -webkit-transition: background-color 0.3s linear, color 0.3s linear;
+  transition: background-color 0.3s linear, color 0.3s linear;
+  background: rgba(255, 255, 255, 0);
+}
+
+.opacity:hover {
+  color: #124a58;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.thumbnail {
+  margin: auto;
+  float: right;
+}
+
+.hometitle {
+  padding: 30px;
+  vertical-align: middle;
+  text-align: center;
 }

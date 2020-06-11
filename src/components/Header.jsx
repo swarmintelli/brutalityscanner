@@ -1,16 +1,17 @@
 import React from 'react'
 import GavelIcon from '@material-ui/icons/Gavel';
 import {Link} from 'react-router-dom';
+import {Button} from 'react-bootstrap';
 
 function Header() {
     return(
         <div className="totalheader">
             <header className="titleheader"><GavelIcon />Brutality Scanner</header>
             <header className="navheader">
-                <Link to='/'><div class='routinglinks'>Home</div></Link>
-                <Link to='/upload'><div class='routinglinks'>Upload</div></Link>
-                <Link to='/stats'><div class='routinglinks'>Stats</div></Link>
-                <Link to='/about'><div class='routinglinks'>About</div></Link>
+                <Link class="link opacity" to="/"><div className='routinglinks'>Home</div></Link>
+                <Link class="link opacity" to="/upload"><div className='routinglinks'>Upload</div></Link>
+                <Link class="link opacity" to="/stats"><div className='routinglinks'>Stats</div></Link>
+                <Link class="link opacity" to="/about"><div className='routinglinks'>About</div></Link>
             </header>
         </div>
     );

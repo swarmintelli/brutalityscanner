@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import Fab from '@material-ui/core/Fab';
 import Zoom from '@material-ui/core/Zoom';
+import SearchIcon from '@material-ui/icons/Search';
 
 function CreateArea(props) {
   const [note, setNote] = useState({
@@ -38,21 +39,15 @@ function CreateArea(props) {
   return (
     <div>
       <form className="create-note">
-        {isExpanded ? <input
-          name="title"
-          onChange={handleChange}
-          value={note.title}
-          placeholder="Title"
-        /> : null}
-        <textarea
+        <input
           name="content"
           onChange={handleChange}
           value={note.content}
-          placeholder="Take a note..."
+          placeholder="Search..."
           rows={isExpanded ? 3:1}
           onClick={expand}
         />
-        <Zoom in={isExpanded}><Fab onClick={submitNote}><AddCircleIcon /></Fab></Zoom>
+        <Zoom in={isExpanded}><Fab onClick={submitNote}><SearchIcon /></Fab></Zoom>
       </form>
     </div>
   );
