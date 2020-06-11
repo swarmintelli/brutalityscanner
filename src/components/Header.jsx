@@ -6,7 +6,10 @@ import {Button} from 'react-bootstrap';
 function Header() {
     return(
         <div className="totalheader">
-            <header className="titleheader"><GavelIcon />Brutality Scanner</header>
+            <header className="titleheader">
+                <GavelIcon />
+                <div className='routinglinks'>Brutality Scanner</div>
+            </header>
             <header className="navheader">
                 <Link class="link opacity" to="/"><div className='routinglinks'>Home</div></Link>
                 <Link class="link opacity" to="/upload"><div className='routinglinks'>Upload</div></Link>

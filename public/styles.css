@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 html {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Muli', sans-serif;
 }
 body {
   background: #eee;  
@@ -22,16 +22,18 @@ body {
 }
 
 .titleheader {
-  background-color: #f5ba13;
+  background-color: #000000;
   margin: auto -16px;
-  padding: 16px 32px;
+  padding: 16px 24px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   display: inline-flex;
   vertical-align: middle;
+  color: #eee;
+  justify-content: space-between;
 }
 
 .navheader {
-  background-color: #f5ba13;
+  background-color: #000000;
   vertical-align: middle;
   margin: auto -16px;
   padding: 16px 24px;
@@ -43,9 +45,10 @@ body {
 .routinglinks {
   padding: 0px 16px;
 }
+
 header h1 {
   color: #fff;
-  font-family: "McLaren", cursive;
+  font-family: "McLaren";
   font-weight: 200;
 }
 

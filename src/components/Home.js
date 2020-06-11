@@ -35,7 +35,7 @@ function Home() {
   return(
       <div>
         <Header />
-          <h1 className='hometitle' >A fully anonymous platform for collecting and storing evidence of state sponsored brutality</h1>
+          <h2 className='hometitle' >A fully anonymous platform for collecting and storing evidence of state sponsored brutality</h2>
           <CreateArea onAdd={addNote}/>
           {notes.map((x, index) => <Note id={index} title={x.title} content={x.content} onDelete={deleteNote}/>)}
         <Footer />
