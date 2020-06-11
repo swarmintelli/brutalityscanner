@@ -15,7 +15,13 @@ body {
   height:100%;
 }
 
-header {
+.totalheader {
+  display: flex;
+  vertical-align: middle;
+  justify-content: space-between;
+}
+
+.titleheader {
   background-color: #f5ba13;
   margin: auto -16px;
   padding: 16px 32px;
@@ -24,6 +30,19 @@ header {
   vertical-align: middle;
 }
 
+.navheader {
+  background-color: #f5ba13;
+  vertical-align: middle;
+  margin: auto -16px;
+  padding: 16px 24px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+}
+
+.routinglinks {
+  padding: 0px 16px;
+}
 header h1 {
   color: #fff;
   font-family: "McLaren", cursive;
